@@ -1,10 +1,4 @@
-# mackerel-handson
-
----
-title: Mackerel Hands-On
-layout: handson
-id: handson-index
----
+# Mackerel Hands-On
 
 ※こちらは、[Mackerel Hands-On Seminar](http://mackerelio.connpass.com/event/38331/)で用いる手順ページです。<br>
 <br>
