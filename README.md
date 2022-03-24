@@ -1,10 +1,8 @@
 # Mackerel Hands-On
 
-※こちらは、[Mackerel Hands-On Seminar](http://mackerelio.connpass.com/event/38331/)で用いる手順ページです。<br>
-<br>
-Mackerel Hands-On Seminar へようこそ。<br>
-このハンズオンでは、mackerel-agentのインストールからブラウザ上でのグラフの確認、プラグインの便利な使い方などをガイドしていきます。<br>
-ワクワクする時間になれば幸いです。<br>
+Mackerel Hands-On Seminar へようこそ。
+このハンズオンでは、mackerel-agentのインストールからブラウザ上でのグラフの確認、プラグインの便利な使い方などをガイドしていきます。
+ワクワクする時間になれば幸いです。
 
 # 事前準備
 
@@ -20,9 +18,7 @@ Mackerel Hands-On Seminar へようこそ。<br>
 ### 【手順１】ログインコマンドの確認
 
 Mackerel Hands-On Seminar では、ハンズオンで用いるサーバーをあらかじめご用意しています。
-
 ログインコマンドは別 URL にて公開しています。ログインができることを確認してみてください。
-
 
 ### 【手順２】ホスト名（サーバー名）の変更
 ログインすることができたら、まずは肩慣らしとして、ホスト名の変更を行ってみましょう。
