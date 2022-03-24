@@ -45,3 +45,7 @@ TeraTermなどのSSHクライアントから接続をしてください。
 ```shell
 ssh mackerel-handson-guest@<ハンズオンサーバーのIP>
 ```
+
+## アジェンダ
+- [オーガニゼーションを作成する](/01_signup/readme.md)
+- 
