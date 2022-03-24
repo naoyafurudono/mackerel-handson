@@ -48,6 +48,9 @@ ssh -J mackerel-handson-guest@<中継サーバーのIP> mackerel-handson-guest@<
 TeraTermなどのSSHクライアントから接続をしてください。
 
 - まずはSSHで**中継サーバー**にログインしてください
+```shell
+ssh mackerel-handson-guest@<中継サーバーのIP>
+```
 - 中継サーバーログイン後に以下のコマンドで**ハンズオンサーバー**にログインしてください
 ```shell
 ssh mackerel-handson-guest@<ハンズオンサーバーのIP>
