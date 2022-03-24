@@ -29,7 +29,7 @@ Mackerel Hands-On Seminar では、ハンズオンで用いるサーバーをあ
 
 <div class="clip">
   <pre><code class="target">sudo hostname 【お名前など】-host</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 例えば `sudo hostname suzuki-host` などです。ホスト名にはアンダーバー `_` を使うことができませんのでご注意下さい。
@@ -43,7 +43,7 @@ Mackerel Hands-On Seminar では、ハンズオンで用いるサーバーをあ
 
 <div class="clip">
   <pre><code class="target">hostname</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 `suzuki-host` など、手順２で決めたホスト名が表示されたら OK です。
@@ -61,9 +61,9 @@ Mackerel Hands-On Seminar では、ハンズオンで用いるサーバーをあ
 ## <a name="3">3. エージェントのインストール・起動・GUI の確認</a>
 ここで行って頂くことは、下記3つの手順です。
 
-* エージェント（mackerel-agent）のインストール
-* エージェント（mackerel-agent）の設定
-* エージェント（mackerel-agent）の起動
+- エージェント（mackerel-agent）のインストール
+- エージェント（mackerel-agent）の設定
+- エージェント（mackerel-agent）の起動
 
 これらの手順は、[オーガニゼーションの作成完了後に表示されている画面](https://mackerel.io/my/instruction)の「2. 新規ホストを登録する」に従って作業を進めてみてください。
 
@@ -80,7 +80,7 @@ Mackerel Hands-On Seminar では、ハンズオンで用いるサーバーをあ
 
 <div class="clip">
   <pre><code class="target">yes > /dev/null</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 `y` を延々と出力するコマンド `yes` を実行します。（その出力をただ捨てるだけのコマンドです。）
@@ -120,7 +120,7 @@ OSS（オープンソースソフトウェア）なので、いつでも誰で�
 
 <div class="clip">
   <pre><code class="target">sudo yum install -y mackerel-agent-plugins</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 コマンドを実行すると画面には色々と表示されると思いますが、最終的に「完了しました！」と表示され、再びコマンドが入力できる状態になっていれば成功です。
@@ -136,7 +136,7 @@ cat >>/etc/mackerel-agent/mackerel-agent.conf <<'EOF';
 command = "mackerel-plugin-linux"
 EOF
 SCRIPT</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 特にエラーなどが発生せず、再びコマンドが入力できる状態になっていれば成功です。（完了メッセージも表示されません）
@@ -147,7 +147,7 @@ SCRIPT</code></pre>
 
 <div class="clip">
   <pre><code class="target">sudo systemctl restart mackerel-agent</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 コマンド実行後、 `[ OK ]` と表示されていれば起動成功です。
@@ -159,7 +159,7 @@ SCRIPT</code></pre>
 
 <div class="clip">
   <pre><code class="target">sudo mackerel-plugin-linux</code></pre>
-  <button type="button" class="clip-button">Copy</button>
+  <!-- <button type="button" class="clip-button">Copy</button> -->
 </div>
 
 ## <a name="6">6. 便利な使い方のご紹介</a>
