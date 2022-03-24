@@ -1,3 +1,10 @@
+---
+title: ハンズオン概要
+lang: ja-jp
+---
+
+![](https://mackerel.io/files/images/brand-assets/logo.svg)
+
 # Mackerel Hands-On Seminar
 
 Mackerel Hands-On Seminar へようこそ。
