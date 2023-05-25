@@ -58,7 +58,7 @@ SCRIPT
 mackerel-agent.conf を変更した際に有効なシンタックスチェック機能が mackerel-agent には備わっています。次のコマンドを実行してみましょう。
 
 ```shell
-mackerel-agent configtest
+SUCCESS (/etc/mackerel-agent/mackerel-agent.conf)
 ```
 
 次のような結果が出力されていれば記載ミスなどがないことを確認できます。
