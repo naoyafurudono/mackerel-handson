@@ -64,7 +64,7 @@ mackerel-agent configtest
 次のような結果が出力されていれば記載ミスなどがないことを確認できます。
 
 ```
-/etc/mackerel-agent/mackerel-agent.conf Syntax OK
+SUCCESS (/etc/mackerel-agent/mackerel-agent.conf)
 ```
 
 問題なければ、以下のコマンドにより mackerel-agent を再起動します。
