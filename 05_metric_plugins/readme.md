@@ -58,13 +58,13 @@ SCRIPT
 mackerel-agent.conf を変更した際に有効なシンタックスチェック機能が mackerel-agent には備わっています。次のコマンドを実行してみましょう。
 
 ```shell
-SUCCESS (/etc/mackerel-agent/mackerel-agent.conf)
+mackerel-agent configtest
 ```
 
 次のような結果が出力されていれば記載ミスなどがないことを確認できます。
 
 ```
-/etc/mackerel-agent/mackerel-agent.conf Syntax OK
+SUCCESS (/etc/mackerel-agent/mackerel-agent.conf)
 ```
 
 問題なければ、以下のコマンドにより mackerel-agent を再起動します。
