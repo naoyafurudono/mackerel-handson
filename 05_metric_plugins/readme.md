@@ -34,14 +34,9 @@ Mackerelの公式プラグイン集は以下のGitHubリポジトリで公開さ
 
 公式プラグインパッケージに含まれている mackerel-plugin-linux プラグインを使用して、Linux OSに関するメトリックを拡張してみます。
 
-mackerel-agent に mackerel-plugin-linux プラグインを導入するには設定ファイル `/etc/mackerel-agent/mackerel-agent.conf` をviなどで開いて以下の2行を追記します。
+mackerel-agent に mackerel-plugin-linux プラグインを導入するには設定ファイル `/etc/mackerel-agent/mackerel-agent.conf` に設定を2行追記します。
 
-```toml
-[plugin.metrics.linux]
-command = "mackerel-plugin-linux"
-```
-
-以下のコマンドをターミナルで実行することでも追記できます。
+以下のコマンドをターミナルで実行することで追記できます。
 
 ```shell
 sudo sh << SCRIPT
@@ -51,6 +46,13 @@ cat >>/etc/mackerel-agent/mackerel-agent.conf <<'EOF';
 command = "mackerel-plugin-linux"
 EOF
 SCRIPT
+```
+
+viなどのエディタで開いて以下の2行を追記しても構いません。
+
+```toml
+[plugin.metrics.linux]
+command = "mackerel-plugin-linux"
 ```
 
 特にエラーなどが発生せず、再びコマンドが入力できる状態になっていれば成功です。（完了メッセージなどは表示されません）
