@@ -55,14 +55,9 @@ apache    3923  0.0  0.6 306576  6308 ?        Sl   03:52   0:00 /usr/sbin/httpd
 ec2-user  3967  0.0  0.0 119436   936 pts/0    S+   03:52   0:00 grep --color=auto httpd
 ```
 
-mackerel-agentの設定ファイル `/etc/mackerel-agent/mackerel-agent.conf` をviなどで開いて以下の2行を追記します。
+mackerel-agentの設定ファイル `/etc/mackerel-agent/mackerel-agent.conf` に設定を2行追記します。
 
-```toml
-[plugin.checks.proc_httpd]
-command = ["check-procs", "--pattern", "httpd"]
-```
-
-以下のコマンドをターミナルで実行することでも追記できます。
+以下のコマンドをターミナルで実行することで追記できます。
 
 ```shell
 sudo sh << SCRIPT
@@ -73,6 +68,14 @@ command = ["check-procs", "--pattern", "httpd"]
 EOF
 SCRIPT
 ```
+
+viなどのエディタで開いて以下の2行を追記しても構いません。
+
+```toml
+[plugin.checks.proc_httpd]
+command = ["check-procs", "--pattern", "httpd"]
+```
+
 
 特にエラーなどが発生せず、再びコマンドが入力できる状態になっていれば成功です。（完了メッセージも表示されません）
 
