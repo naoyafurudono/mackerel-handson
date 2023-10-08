@@ -110,7 +110,7 @@ linux.ss.LISTEN	42.000000	1620797938
 
 ### プラグインのメトリックを確認する
 
-[Hosts](https://mackerel.io/my/hosts)から設定したホストの詳細画面を開いて確認してみましょう。
+[ホスト](https://mackerel.io/my/hosts)から設定したホストの詳細画面を開いて確認してみましょう。
 
 ![](./custom_metric.png)
 

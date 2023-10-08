@@ -36,7 +36,7 @@ curl -fsSL https://mackerel.io/file/script/amznlinux/setup-all-yum-v2.sh | MACKE
 
 ## 登録されたホストを見てみる
 
-インストールが完了したら[Hosts](https://mackerel.io/my/hosts)にアクセスして、mackerel-agentをインストールしたホストが登録されているか確認してみましょう。（反映までに1〜2分かかる場合があります）
+インストールが完了したら左サイドメニューの[ホスト](https://mackerel.io/my/hosts)にアクセスして、mackerel-agentをインストールしたホストが登録されているか確認してみましょう。（反映までに1〜2分かかる場合があります）
 
 ![](./hosts.png)
 
