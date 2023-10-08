@@ -57,6 +57,7 @@ ssh mackerel-handson-guest@<ハンズオンサーバーのIP>
 ```
 
 ## アジェンダ
+
 - [オーガニゼーションを作成する](/01_signup/readme.md)
 - [エージェントをインストールする](/02_install_agent/readme.md)
 - [サービス／ロールでホスト管理をする](/03_service_role/readme.md)

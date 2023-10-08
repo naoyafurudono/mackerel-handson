@@ -62,3 +62,6 @@ sudo systemctl start httpd
 ```
 
 お疲れさまでした！
+
+- 前: [公式チェックプラグインを導入する](/06_check_plugins/readme.md)
+- 次: [おまけ](/09_extra/readme.md)

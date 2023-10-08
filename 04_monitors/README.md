@@ -67,3 +67,6 @@ openssl speed -multi `getconf _NPROCESSORS_ONLN`
 この様にMackerelでは障害が解消したことを検知して、自動的にアラートをクローズする仕組みとなっています。
 
 次のハンズオンでは公式プラグインを導入して、監視を拡張してみましょう。
+
+- 前: [サービス／ロールでホスト管理をする](/03_service_role/readme.md)
+- 次: [公式メトリックプラグインを導入する](/05_metric_plugins/readme.md)
