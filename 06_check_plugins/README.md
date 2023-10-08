@@ -152,5 +152,5 @@ sudo systemctl start httpd
 
 httpdプロセスを起動して数分するとアラートが自動的にクローズされることを確認します。
 
-- 前: [公式メトリックプラグインを導入する](/05_metric_plugins/readme.md)
-- 次: [通知をカスタマイズする](/07_notification/readme.md)
+- 前: [公式メトリックプラグインを導入する](/05_metric_plugins/README.md)
+- 次: [通知をカスタマイズする](/07_notification/README.md)

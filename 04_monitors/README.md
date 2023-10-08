@@ -68,5 +68,5 @@ openssl speed -multi `getconf _NPROCESSORS_ONLN`
 
 次のハンズオンでは公式プラグインを導入して、監視を拡張してみましょう。
 
-- 前: [サービス／ロールでホスト管理をする](/03_service_role/readme.md)
-- 次: [公式メトリックプラグインを導入する](/05_metric_plugins/readme.md)
+- 前: [サービス／ロールでホスト管理をする](/03_service_role/README.md)
+- 次: [公式メトリックプラグインを導入する](/05_metric_plugins/README.md)

@@ -58,12 +58,12 @@ ssh mackerel-handson-guest@<ハンズオンサーバーのIP>
 
 ## アジェンダ
 
-- [オーガニゼーションを作成する](/01_signup/readme.md)
-- [エージェントをインストールする](/02_install_agent/readme.md)
-- [サービス／ロールでホスト管理をする](/03_service_role/readme.md)
-- [監視ルールを追加する](/04_monitors/readme.md)
-- [公式メトリックプラグインを導入する](/05_metric_plugins/readme.md)
-- [公式チェックプラグインを導入する](/06_check_plugins/readme.md)
-- [通知をカスタマイズする](/07_notification/readme.md)
-- [おまけ](/09_extra/readme.md)
-- [ホストを退役する](/16_retire_host/readme.md)
+- [オーガニゼーションを作成する](/01_signup/README.md)
+- [エージェントをインストールする](/02_install_agent/README.md)
+- [サービス／ロールでホスト管理をする](/03_service_role/README.md)
+- [監視ルールを追加する](/04_monitors/README.md)
+- [公式メトリックプラグインを導入する](/05_metric_plugins/README.md)
+- [公式チェックプラグインを導入する](/06_check_plugins/README.md)
+- [通知をカスタマイズする](/07_notification/README.md)
+- [おまけ](/09_extra/README.md)
+- [ホストを退役する](/16_retire_host/README.md)
