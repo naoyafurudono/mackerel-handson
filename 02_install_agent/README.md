@@ -5,7 +5,7 @@ lang: ja-jp
 
 # エージェントをインストールする
 
-このハンズオンでは監視対象となるサーバーに mackerel-agent をインストールして監視を始めます。
+このハンズオンでは監視対象となるサーバーにmackerel-agentをインストールして監視を始めます。
 
 ## エージェントをインストール
 
@@ -40,7 +40,7 @@ curl -fsSL https://mackerel.io/file/script/amznlinux/setup-all-yum-v2.sh | MACKE
 
 ![](./hosts.png)
 
-ホスト名をクリックしてホスト詳細画面にアクセスし、 mackerel-agent が収集する情報にどのようなものがあるかメトリック仕様と照らし合わせて確認してみてください。
+ホスト名をクリックしてホスト詳細画面にアクセスし、mackerel-agentが収集する情報にどのようなものがあるかメトリック仕様と照らし合わせて確認してみてください。
 
 - [メトリック仕様 - Mackerel ヘルプ](https://mackerel.io/ja/docs/entry/spec/metrics)
 
@@ -50,7 +50,7 @@ curl -fsSL https://mackerel.io/file/script/amznlinux/setup-all-yum-v2.sh | MACKE
 
 ### 異なるOSのインストールコマンドを実行してしまった場合
 
-Amazon Linux2 の環境に Amazon Linux のインストールコマンドを実行してしまったなどの場合は、mackerel-agent のアンインストールとリポジトリの削除を行い、改めて正しいインストールスクリプトを実行する必要があります。
+Amazon Linux2の環境にAmazon Linuxのインストールコマンドを実行してしまったなどの場合は、mackerel-agentのアンインストールとリポジトリの削除を行い、改めて正しいインストールスクリプトを実行する必要があります。
 
 アンインストールの一連の手順は以下を実行してください。
 
