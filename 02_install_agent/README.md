@@ -50,7 +50,7 @@ curl -fsSL https://mackerel.io/file/script/amznlinux/setup-all-yum-v2.sh | MACKE
 
 ### 異なるOSのインストールコマンドを実行してしまった場合
 
-Amazon Linux2の環境にAmazon Linuxのインストールコマンドを実行してしまったなどの場合は、mackerel-agentのアンインストールとリポジトリの削除を行い、改めて正しいインストールスクリプトを実行する必要があります。
+Amazon Linux環境に CentOS / RedHat のインストールコマンドを実行してしまった場合は、mackerel-agentのアンインストールとリポジトリの削除を行い、改めて正しいインストールスクリプトを実行する必要があります。
 
 アンインストールの一連の手順は以下を実行してください。
 
