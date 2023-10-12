@@ -9,7 +9,7 @@ Mackerelでは障害の発生を検知するとアラートが発報され、デ
 
 ## チャンネル設定を確認する
 
-左サイドメニューから[Channels](https://mackerel.io/my/channels)を開いて確認してみましょう。
+左サイドメニューから[チャンネル](https://mackerel.io/my/channels)を開いて確認してみましょう。
 
 ![](./channels.png)
 
@@ -23,7 +23,7 @@ Mackerelでは障害の発生を検知するとアラートが発報され、デ
 
 このハンズオンでは通知グループを新しく追加して、任意の監視ルールの通知を作成した通知グループにだけ通知されるような設定をしてみましょう。
 
-まずは[Channels](https://mackerel.io/my/channels)の右上にある`通知グループ／通知チャンネルを追加`から通知グループを追加します。
+まずは[チャンネル](https://mackerel.io/my/channels)の右上にある`通知グループ／通知チャンネルを追加`から通知グループを追加します。
 
 ![](./notification_group.png)
 
@@ -62,3 +62,6 @@ sudo systemctl start httpd
 ```
 
 お疲れさまでした！
+
+- 前: [公式チェックプラグインを導入する](/06_check_plugins/README.md)
+- 次: [おまけ](/09_extra/README.md)

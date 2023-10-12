@@ -43,3 +43,6 @@ ps aux | grep httpd
 
 無事に復旧されているでしょうか！？
 
+
+- 前: [通知をカスタマイズする](/07_notification/README.md)
+- 次: [ホストを退役する](/16_retire_host/README.md)

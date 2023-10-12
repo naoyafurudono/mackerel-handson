@@ -57,7 +57,7 @@ command = "mackerel-plugin-linux"
 
 特にエラーなどが発生せず、再びコマンドが入力できる状態になっていれば成功です。（完了メッセージなどは表示されません）
 
-mackerel-agent.conf を変更した際に有効なシンタックスチェック機能が mackerel-agent には備わっています。次のコマンドを実行してみましょう。
+mackerel-agent.conf を変更した際に有効なシンタックスチェック機能がmackerel-agentには備わっています。次のコマンドを実行してみましょう。
 
 ```shell
 mackerel-agent configtest
@@ -110,12 +110,15 @@ linux.ss.LISTEN	42.000000	1620797938
 
 ### プラグインのメトリックを確認する
 
-[Hosts](https://mackerel.io/my/hosts)から設定したホストの詳細画面を開いて確認してみましょう。
+[ホスト](https://mackerel.io/my/hosts)から設定したホストの詳細画面を開いて確認してみましょう。
 
 ![](./custom_metric.png)
 
 プラグインが取得したメトリックはカスタムメトリックとしてホストに投稿されている事が確認できました。
 
-Mackerelでは mackerel-agent が収集するメトリックはシステムメトリック、プラグインが収集するメトリックはカスタムメトリックとして分類されます。
+Mackerelではmackerel-agentが収集するメトリックはシステムメトリック、プラグインが収集するメトリックはカスタムメトリックとして分類されます。
 
 次のハンズオンではサーバーの状態を確認するチェック監視プラグインを導入してみます。
+
+- 前: [監視ルールを追加する](/04_monitors/README.md)
+- 次: [公式チェックプラグインを導入する](/06_check_plugins/README.md)

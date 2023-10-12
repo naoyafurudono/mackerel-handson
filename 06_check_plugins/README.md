@@ -113,7 +113,7 @@ echo $?
 
 - [チェックプラグイン仕様（チェック監視項目を追加する） - Mackerel ヘルプ](https://mackerel.io/ja/docs/entry/custom-checks#plugin)
 
-それでは設定を反映したホストの詳細画面の上部／下部にある Monitors にチェック監視とその結果が反映されているか確認してみましょう。[Hosts](https://mackerel.io/my/hosts)からアクセスします。
+それでは設定を反映したホストの詳細画面の上部／下部にある Monitors にチェック監視とその結果が反映されているか確認してみましょう。[ホスト](https://mackerel.io/my/hosts)からアクセスします。
 
 ![](./host_monitors.png)
 
@@ -140,7 +140,7 @@ Procs CRITICAL:
 Found 0 matching processes; cmd /httpd/
 ```
 
-発報されたアラートを[Alerts](https://mackerel.io/my/alerts)から確認してみます。
+発報されたアラートを[アラート](https://mackerel.io/my/alerts)から確認してみます。
 
 ![](./alert.png)
 
@@ -151,3 +151,6 @@ sudo systemctl start httpd
 ```
 
 httpdプロセスを起動して数分するとアラートが自動的にクローズされることを確認します。
+
+- 前: [公式メトリックプラグインを導入する](/05_metric_plugins/README.md)
+- 次: [通知をカスタマイズする](/07_notification/README.md)

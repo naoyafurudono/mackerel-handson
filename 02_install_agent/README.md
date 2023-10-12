@@ -5,7 +5,7 @@ lang: ja-jp
 
 # エージェントをインストールする
 
-このハンズオンでは監視対象となるサーバーに mackerel-agent をインストールして監視を始めます。
+このハンズオンでは監視対象となるサーバーにmackerel-agentをインストールして監視を始めます。
 
 ## エージェントをインストール
 
@@ -36,11 +36,11 @@ curl -fsSL https://mackerel.io/file/script/amznlinux/setup-all-yum-v2.sh | MACKE
 
 ## 登録されたホストを見てみる
 
-インストールが完了したら[Hosts](https://mackerel.io/my/hosts)にアクセスして、mackerel-agentをインストールしたホストが登録されているか確認してみましょう。（反映までに1〜2分かかる場合があります）
+インストールが完了したら左サイドメニューの[ホスト](https://mackerel.io/my/hosts)にアクセスして、mackerel-agentをインストールしたホストが登録されているか確認してみましょう。（反映までに1〜2分かかる場合があります）
 
 ![](./hosts.png)
 
-ホスト名をクリックしてホスト詳細画面にアクセスし、 mackerel-agent が収集する情報にどのようなものがあるかメトリック仕様と照らし合わせて確認してみてください。
+ホスト名をクリックしてホスト詳細画面にアクセスし、mackerel-agentが収集する情報にどのようなものがあるかメトリック仕様と照らし合わせて確認してみてください。
 
 - [メトリック仕様 - Mackerel ヘルプ](https://mackerel.io/ja/docs/entry/spec/metrics)
 
@@ -50,7 +50,7 @@ curl -fsSL https://mackerel.io/file/script/amznlinux/setup-all-yum-v2.sh | MACKE
 
 ### 異なるOSのインストールコマンドを実行してしまった場合
 
-Amazon Linux2 の環境に Amazon Linux のインストールコマンドを実行してしまったなどの場合は、mackerel-agent のアンインストールとリポジトリの削除を行い、改めて正しいインストールスクリプトを実行する必要があります。
+Amazon Linux環境に CentOS / RedHat のインストールコマンドを実行してしまった場合は、mackerel-agentのアンインストールとリポジトリの削除を行い、改めて正しいインストールスクリプトを実行する必要があります。
 
 アンインストールの一連の手順は以下を実行してください。
 
@@ -70,3 +70,6 @@ mackerel-agentのログを確認して、どのようなエラーが発生して
 ```shell
 sudo journalctl -u mackerel-agent.service
 ```
+
+- 前: [オーガニゼーションを作成する](/01_signup/README.md)
+- 次: [サービス／ロールでホスト管理をする](/03_service_role/README.md)
