@@ -71,5 +71,5 @@ mackerel-agentのログを確認して、どのようなエラーが発生して
 sudo journalctl -u mackerel-agent.service
 ```
 
-- 前: [オーガニゼーションを作成する](/01_signup/README.md)
-- 次: [サービス／ロールでホスト管理をする](/03_service_role/README.md)
+- 前: [オーガニゼーションを作成する](/01_signup/readme.md)
+- 次: [サービス／ロールでホスト管理をする](/03_service_role/readme.md)

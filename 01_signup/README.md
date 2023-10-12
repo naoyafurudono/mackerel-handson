@@ -40,4 +40,4 @@ Mackerelにログインしている状態で、画面左上にあるオーガニ
 
 ![](./create_new_org.png)
 
-- 次: [エージェントをインストールする](/02_install_agent/README.md)
+- 次: [エージェントをインストールする](/02_install_agent/readme.md)
