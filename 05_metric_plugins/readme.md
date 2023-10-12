@@ -120,5 +120,5 @@ Mackerelではmackerel-agentが収集するメトリックはシステムメト�
 
 次のハンズオンではサーバーの状態を確認するチェック監視プラグインを導入してみます。
 
-- 前: [監視ルールを追加する](/04_monitors/README.md)
-- 次: [公式チェックプラグインを導入する](/06_check_plugins/README.md)
+- 前: [監視ルールを追加する](/04_monitors/readme.md)
+- 次: [公式チェックプラグインを導入する](/06_check_plugins/readme.md)
