@@ -1,3 +1,5 @@
+[←目次へ戻る](../README.md)
+
 # このハンズオンを始める前の準備
 
 ようこそ！ このハンズオンでは、皆さんのコンピュータ上に構築した仮想環境コンテナでアプリケーションを動かし、アプリケーションから得られたOpenTelemetryトレースシグナルをオブザーバビリティプラットフォームの[Mackerel](https://ja.mackerel.io)に送って、解析することを体験します。
@@ -23,6 +25,9 @@ git --version
 正常にインストールされていれば、「`git version 2.48.1`」のようにバージョンが表示されます。
 
 `command not found`のようにエラーが出てしまった場合は、インストールした`git`コマンドへのパス設定がされているかなど確認してください。
+
+> [!IMPORTANT]
+> ターミナルを開いて`git --version`を実行したときに、バージョンが表示されることを確認できましたか？
 
 ## Dockerの設定
 
@@ -77,6 +82,9 @@ For more examples and ideas, visit:
 
 `docker`はDockerの呼び出しコマンド、`run`は新たにコンテナを立てて実行する指示、`--rm`はコンテナの実行終了時にそのコンテナを削除するオプション、`hello-world`はコンテナの元となるコンテナイメージです。コンテナイメージは[Docker Hub](https://hub.docker.com/)というWebサイトからダウンロードされます。
 
+> [!IMPORTANT]
+> `docker`コマンドおよびhello-worldコンテナが実行できることを確認できましたか？
+
 > [!NOTE]
 > ダウンロードしたコンテナイメージを手元から削除したいときには、`docker rmi hello-world`を実行します。
 
@@ -98,3 +106,5 @@ For more examples and ideas, visit:
 - [IntelliJ IDEA](https://www.jetbrains.com/ja-jp/idea/)
 
 筆者はEmacsとVisual Studio Codeを使っています。
+
+[→「Mackerelを使うための準備」へ進む](../02-mackerelsetup/README.md)
