@@ -1,0 +1,45 @@
+services:
+  app:
+    container_name: sample-app
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    environment:
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_HOST: db
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4319"
+      OTEL_SERVICE_NAME: "otel-sample-app"
+    depends_on:
+      - db
+      - otel-collector
+    networks:
+      - sample-app
+
+  db:
+    container_name: sample-db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: otel-sample
+    networks:
+      - sample-app
+
+  otel-collector:
+    container_name: sample-otel-collector
+    image: otel/opentelemetry-collector-contrib:latest
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otelcol-contrib/config.yaml
+    ports:
+      - 4319:4319
+    env_file:
+      - env.txt
+    networks:
+      - sample-app
+
+networks:
+  sample-app:
