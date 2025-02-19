@@ -8,7 +8,7 @@
 
 ![スタックトレース](error-stacktrace.png)
 
-スタックトレースからエラーの行数を特定しアプリケーションを改善してみましょう。エディタで[`app/controllers/product_controller.rb`](../../demo-sample-app/ruby/app/controllers/product_controller.rb)を開いてください。
+スタックトレースからエラーの行数を特定しアプリケーションを改善してみましょう。エディタで[`app/controllers/product_controller.rb`](../../demo/sample-app/ruby/app/controllers/product_controller.rb)を開いてください。
 
 `method_sample`メソッドは以下のループで1, 2, 3を引数として3回呼び出されます。
 

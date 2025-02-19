@@ -1,5 +1,5 @@
 # Mackerelのトレースに送出します
-# .envファイルのMACKEREL_APIKEYにオーガニゼーションのAPIキーを設定してください
+# env.txtファイルのMACKEREL_APIKEYにオーガニゼーションのAPIキーを設定してください
 receivers:
   otlp:
     protocols:

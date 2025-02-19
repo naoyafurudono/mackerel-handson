@@ -14,7 +14,7 @@ SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ? ?
 
 他の`SELECT sample_development`スパンを確認しても同じ様子で、同一のテーブルから1件ずつデータを引く処理が大量にあり、いかにも効率が悪そうです。実際にコードを見ていきましょう。
 
-[`app/controllers/product_controller.rb`](../../demo-sample-app/ruby/app/controllers/product_controller.rb)見ると`products.map`の部分でループをするたびに`product.category.name`にアクセスしCategoryテーブルからデータを引いているため、典型的なN+1問題が起きていそうです。この処理を改善しましょう。
+[`app/controllers/product_controller.rb`](../../demo/sample-app/ruby/app/controllers/product_controller.rb)見ると`products.map`の部分でループをするたびに`product.category.name`にアクセスしCategoryテーブルからデータを引いているため、典型的なN+1問題が起きていそうです。この処理を改善しましょう。
 
 ```ruby
 products = Product.all.sample(100)

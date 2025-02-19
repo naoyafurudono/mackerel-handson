@@ -37,7 +37,7 @@ services:
     ports:
       - 4319:4319
     env_file:
-      - env.txt
+      - ../../env.txt
     networks:
       - sample-app
 
