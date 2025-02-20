@@ -12,7 +12,7 @@
 > この画面が表示されない場合は、アプリケーションの初期化や起動に失敗している可能性があります。[サンプルWebアプリケーションの準備](../12-prepare-webapp/README.md)をご参照ください。
 
 > [!NOTE]
-> ターミナルに以下のようなエラーが表示されている場合、トレースの送信に失敗しています。[env.txtファイル](../../demo-sample-app/ruby/env.txt)にMackerelのAPIキーが正しく設定されているか確認してください。
+> ターミナルに以下のようなエラーが表示されている場合、トレースの送信に失敗しています。[env.txtファイル](../../demo/env.txt)にMackerelのAPIキーが正しく設定されているか確認してください。
 >
 > ```shell
 > sample-otel-collector  | 2025-02-12T01:13:26.963Z       error   internal/queue_sender.go:84     Exporting failed. Dropping data.        {"kind": "exporter", "data_type": "traces", "name": "otlphttp/mackerel", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to https://otlp-vaxila.mackerelio.com/v1/traces responded with HTTP Status Code 400, Message=Invalid API Key, Details=[]", "dropped_items": 8}

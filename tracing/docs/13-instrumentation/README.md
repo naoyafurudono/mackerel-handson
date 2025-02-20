@@ -10,7 +10,7 @@ Rubyでは、よく用いられるフレームワークやライブラリにあ�
 
 以下がOpenTelemetryによるシグナルの計装や送信の準備をする部分です。このコードを[Railsのイニシャライザファイル](https://railsguides.jp/configuring.html#%E3%82%A4%E3%83%8B%E3%82%B7%E3%83%A3%E3%83%A9%E3%82%A4%E3%82%B6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86)として配置し読み込むだけで、計装ライブラリが用意されている処理に関しては計装が完了してしまいます。中身を見ていきましょう。
 
-- [計装の設定ファイル: `config/initializers/opentelemetry.rb`](../../demo-sample-app/ruby/config/initializers/opentelemetry.rb)
+- [計装の設定ファイル: `config/initializers/opentelemetry.rb`](../../demo/sample-app/ruby/config/initializers/opentelemetry.rb)
 
 ```ruby
 require 'opentelemetry/sdk'
@@ -53,7 +53,7 @@ opentelemetry-instrumentation-allを読み込み、コード内で`c.use_all`と
 
 以下はあるメソッドの処理を計装する例です。`in_span`メソッドのブロックの中身が1つのスパンとして記録されます。`set_attribute`メソッドによってスパンに属性を設定しています。また、`in_span`メソッドの内部で例外を発生させることにより、スパンにエラーと例外が設定されます。
 
-- [手動計装の例: `app/controllers/product_controller.rb`](../../demo-sample-app/ruby/app/controllers/product_controller.rb)
+- [手動計装の例: `app/controllers/product_controller.rb`](../../demo/sample-app/ruby/app/controllers/product_controller.rb)
 
 ```ruby
 def method_sample(n = 10)

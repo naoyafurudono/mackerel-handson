@@ -14,18 +14,21 @@ HotRODの例と同様に、アプリケーションで計装されたトレー�
 
 ## 実行環境
 
-アプリケーションは、先のハンズオンと同様にDocker上で実行します。まずはターミナル上で[`demo-sample-app/ruby`](../../demo-sample-app/)フォルダに移動しましょう。
+アプリケーションは、先のハンズオンと同様にDocker上で実行します。まずはターミナル上で[`demo/sample-app/ruby`](../../demo/sample-app/ruby)フォルダに移動しましょう。
 
 ```shell
-cd demo-sample-app/ruby
+cd mackerel-handson/tracing/demo/sample-app/ruby
+```
+
+先ほどのHotRODを実行していたターミナルであれば、以下のように移動できます。
+
+```shell
+cd ../sample-app/ruby
 ```
 
 ## APIキーの設定
 
-先ほどと同様に、MackerelのWebコンソールからAPIキーを取得し、[`env.txt`](../../demo-sample-app/ruby/env.txt)ファイルを書き換えてください。
-
-> [!IMPORTANT]
-> 詳しくは[MackerelのAPIキーの取得とenv.txtファイルの変更](../05-hotrod1/README.md#mackerelのapiキーの取得とenvtxtファイルの変更)を参照してください。先ほどと同じファイル名ですが、ディレクトリが異なることにご注意ください。
+APIキーは、[MackerelのAPIキーの取得とenv.txtファイルの変更](../05-hotrod1/README.md#mackerelのapiキーの取得とenvtxtファイルの変更)で設定済みです。もし、ハンズオンの後半から始めている場合は手順に従って設定してください。
 
 ## アプリケーションのビルドとデータベースの初期化
 

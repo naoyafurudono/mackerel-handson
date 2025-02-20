@@ -45,7 +45,7 @@ HotRODのフロントエンドサービスである「`frontend | handson/hotrod
 > frontendサービスは、HotRODのフロントエンドとして最初にブラウザからのアクセスを受け付け、ブラウザにレスポンスを返す役割を担います。ここからほかの各サービスが呼び出される様子を見られるので、このハンズオンでトレースを観察するには最適です。
 
 > [!NOTE]
-> `frontend | handson/hotrod-demo`の`frontend`はサービス名ですが、`handson/hotrod-demo`はサービスネームスペース（サービス名前空間）というものです。サービスネームスペースは、複数のアプリケーションからのシグナルを受け付けるオブザーバビリティプラットフォーム上でアプリケーションを区別できるようにするための補助的な属性で、送信側（このハンズオンのHotRODデモではOpenTelemetry Collector）で設定しています（[otel-col-demo.yml](../../demo-hotrod/otel-col-demo.yml)の`resource/namespace`を参照）。
+> `frontend | handson/hotrod-demo`の`frontend`はサービス名ですが、`handson/hotrod-demo`はサービスネームスペース（サービス名前空間）というものです。サービスネームスペースは、複数のアプリケーションからのシグナルを受け付けるオブザーバビリティプラットフォーム上でアプリケーションを区別できるようにするための補助的な属性で、送信側（このハンズオンのHotRODデモではOpenTelemetry Collector）で設定しています（[otel-col-demo.yml](../../demo/hotrod/otel-col-demo.yml)の`resource/namespace`を参照）。
 
 これで、frontendサービスのトレースが画面上に**レイテンシーの分布**として表示されます。
 

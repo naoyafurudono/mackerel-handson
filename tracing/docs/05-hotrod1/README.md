@@ -42,23 +42,13 @@ cd (展開したいフォルダ)
 git clone https://github.com/mackerelio/mackerel-handson.git
 ```
 
-クローンした作業フォルダ内の`tracing/demo-hotrod`フォルダに移動してください（LinuxやmacOS、PowerShellの場合）。
-
-```
-cd mackerel-handson/tracing/demo-hotrod
-```
-
-Windowsの「コマンドプロンプト」では以下のようになります。
-
-```
-cd mackerel-handson¥tracing¥demo-hotrod
-```
+これで、`mackerel-handson`というフォルダが作成され、ハンズオンのファイルが展開されます。
 
 > [!NOTE]
-> このハンズオンのドキュメント資料は、`tracing/docs`フォルダにあります。時間の都合で飛ばした内容の確認や、ハンズオンの復習にご活用ください。
+> このハンズオンのドキュメント資料は、`mackerel-handson/tracing/docs`フォルダにあります。時間の都合で飛ばした内容の確認や、ハンズオンの復習にご活用ください。
 
 > [!NOTE]
-> 過去にGitリポジトリを展開済みで今回改めてご参加される方は、展開したフォルダ内で`git checkout main`、`git pull`を実行して最新の状態にしておいてください。
+> 過去にGitリポジトリを展開済みで今回改めてご参加される方は、展開した`mackerel-handson`フォルダ内で`git checkout main`、`git pull`を実行して最新の状態にしておいてください。
 
 ## MackerelのAPIキーの取得とenv.txtファイルの変更
 
@@ -73,10 +63,10 @@ APIキーの文字列はマスキングされていますが、コピーボタ�
 > [!NOTE]
 > 目玉アイコンをクリックすると、APIキーを表示できます。
 
-コピーしたAPIキーを`tracing/demo-hotrod`フォルダ内の`env.txt`ファイルに書き込み、保存しましょう。
+コピーしたAPIキーを`mackerel-handson/tracing/demo`フォルダ内の`env.txt`ファイルに書き込み、保存しましょう。
 
 ```
-MACKEREL_APIKEY=YOUR_ORGANIZATION_API_KEY
+MACKEREL_APIKEY=
          ↓
 MACKEREL_APIKEY=(APIキー文字列をペースト)
 ```
@@ -86,7 +76,21 @@ MACKEREL_APIKEY=(APIキー文字列をペースト)
 
 ## Dockerの実行
 
-では、Dockerコンテナを動かしてみます。ターミナルで以下を実行してください。
+では、Dockerコンテナを動かしてみます。
+
+クローンした作業フォルダ内の`tracing/demo/hotrod`フォルダに移動してください（LinuxやmacOS、PowerShellの場合）。
+
+```
+cd mackerel-handson/tracing/demo/hotrod
+```
+
+Windowsの「コマンドプロンプト」では以下のようになります。
+
+```
+cd mackerel-handson¥tracing¥demo¥hotrod
+```
+
+ターミナルで以下を実行してください。
 
 ```
 docker compose up

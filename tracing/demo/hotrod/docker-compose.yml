@@ -7,8 +7,6 @@ services:
       - "127.0.0.1:8080:8080"
     command: ["all", "-S", "-m", "<p>注目するのはリクエストから配車に至るlatencyの値です。同じボタンを連打したときにlatencyが伸びていくのを確認し、トレースを見てみましょう。</p>"]
     environment:
-      #- OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp-vaxila.mackerelio.com
-      #- OTEL_EXPORTER_OTLP_HEADERS=Mackerel-Api-Key=${MACKEREL_APIKEY}
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4318
     networks:
       - hotrod-example
@@ -59,7 +57,7 @@ services:
       - ./otel-col-demo.yml:/etc/otelcol-contrib/config.yaml
     ports:
       - "127.0.0.1:4318:4318"
-    env_file: env.txt
+    env_file: ../env.txt
     networks:
       - hotrod-example
 
